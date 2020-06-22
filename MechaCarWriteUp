@@ -1,0 +1,52 @@
+In the mechaCar multiple linear regression, I was able to find the following:
+
+1. There were two variables which provided non-random amounts of variance to the mpg values and they were - vehicle length(p-value: 2.6e-12) and ground clearance (p-value: 5.21e-08).  the vehicle's weight was close with a p-value of 0.08, while the other factors had a random amount of variance. 
+
+2.the slope of the linear model is not considered to be zero.  The regression's p-value is 5.35-11 which is well below our assumed significance level of .05.  
+
+3. This model does adequately predit the mpg of MechaCar prototypes effectively because our R-quared value is .7149.  Anything above .7 has a strong correlation.
+
+
+Suspension Coil Test
+
+Sumary table
+Mean PSI - 1498.78
+Median PSI - 1500
+Variance - 62.29
+Standard Deviation - 7.89
+
+The current manufacturing data meets the design spec of being under 100 pounds per inch variance.  The variance for this data set is 62.29
+
+Suspension Coil T-test
+
+Using the full suspension coil dataset as my sample, I used a one tailed t-test to see if the sample is the same as teh population mean of 1,500.  According to this test, I have failed to reject that hypothesis and we cannot say the suspension Coil's mean is different than the population's.  This test came out with a p-value of .06.
+
+Design your own study
+Metrics that would be of interest to a consumer:
+1. Transmission type
+2. Horse power
+3. Cost
+
+Questions we would ask:
+1. Do automatics or manual transmissioned cars sell more?
+  Ho: Both transmissions have the same sales.
+  Ha: The different transmissioned cars have different sales.
+  test: two sample t-test. 
+  Reason: This will show that either the transmission does or does not matter in regards to sales.  They can then use this to dive into the transmission types they want to make more of.
+
+2. Does cost effect the sales?
+  Ho: Cost does not effect sales.
+  Ha: Cost does effect sales.
+  test: linear regression test
+  reason: This can determine if the cost of the car determines the sales.
+  
+3. Are gas or diesel cars better for performance
+  Ho: Both engine typeshave the same sales.
+  Ha: Tjhe two engine types have different sales.
+  test: two sample t-test.
+  reason: Like the transmission test, this will show if the different engine types effect the sales.  We can then dive into whihc one performs better.
+
+What data should be collected:
+
+We need to collect data for all the cars sold in the past couple years with their engine types, transmission types and costs. We would need this for mechaCar and for the rest of the industry.
+
